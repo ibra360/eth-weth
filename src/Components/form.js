@@ -25,7 +25,8 @@ const Example = (props) => {
   };
   const ConvertWeth = async (e) => {
     e.preventDefault();
-    withdraw(account, web3.utils.toWei(weth));
+    console.log("weth=======", weth);
+    withdraw(account, web3.utils.toWei(`${weth}`));
   };
 
   useEffect(() => {
@@ -35,6 +36,7 @@ const Example = (props) => {
         if (err) {
           console.log("Error in getting eth from web3", err);
         } else {
+          console.log("result in getting eth from web3", result);
           console.log(web3.utils.fromWei(result, "ether") + " ETH");
           setAvbEth(web3.utils.fromWei(result, "ether"));
         }
