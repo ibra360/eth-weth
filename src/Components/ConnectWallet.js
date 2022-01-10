@@ -10,7 +10,7 @@ const Example = (props) => {
   const { activate, account, library } = useWeb3React();
   useEffect(() => {
     connectAccount();
-  }, []);
+  }, [account]);
   const connectAccount = async (e) => {
     // e.preventDefault();
     await activate(injected);

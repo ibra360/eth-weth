@@ -96,7 +96,7 @@ const Example = (props) => {
       )}
       <Button
         color="primary"
-        className=" mt-3 w-25 "
+        className=" mt-3 w-25 mb-3"
         onClick={(e) => {
           findPosition(e);
         }}
