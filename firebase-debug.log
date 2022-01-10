@@ -1,0 +1,92 @@
+[debug] [2022-01-10T10:24:42.859Z] ----------------------------------------------------------------------
+[debug] [2022-01-10T10:24:42.861Z] Command:       /home/ayin_qoph/.nvm/versions/node/v12.18.3/bin/node /home/ayin_qoph/.nvm/versions/node/v12.18.3/bin/firebase deploy
+[debug] [2022-01-10T10:24:42.861Z] CLI Version:   9.16.5
+[debug] [2022-01-10T10:24:42.862Z] Platform:      linux
+[debug] [2022-01-10T10:24:42.862Z] Node Version:  v12.18.3
+[debug] [2022-01-10T10:24:42.903Z] Time:          Mon Jan 10 2022 15:24:42 GMT+0500 (Pakistan Standard Time)
+[debug] [2022-01-10T10:24:42.904Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-01-10T10:24:42.907Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2022-01-10T10:24:43.039Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-01-10T10:24:43.039Z] > authorizing via signed-in user (a.ebrahym360@gmail.com)
+[debug] [2022-01-10T10:24:43.040Z] [iam] checking project eth-weth for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-01-10T10:24:43.041Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2022-01-10T10:24:43.042Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-01-10T10:24:43.436Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Mon, 10 Jan 2022 10:24:43 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-01-10T10:24:43.584Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/eth-weth:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-01-10T10:24:43.884Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2022-01-10T10:24:43.884Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2022-01-10T10:24:45.370Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 10 Jan 2022 10:24:45 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1309","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-01-10T10:24:45.372Z] [iam] error while checking permissions, command may fail: FirebaseError: Authorization failed. This account is missing the following required permissions on project eth-weth:
+
+  firebase.projects.get
+  firebasehosting.sites.update
+[debug] [2022-01-10T10:24:45.373Z] > refreshing access token with scopes: []
+[debug] [2022-01-10T10:24:45.374Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-01-10T10:24:45.707Z] <<< HTTP RESPONSE 200 {"date":"Mon, 10 Jan 2022 10:24:45 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-01-10T10:24:45.843Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/eth-weth [none]
+[debug] [2022-01-10T10:24:46.388Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/eth-weth 403
+[debug] [2022-01-10T10:24:46.388Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/eth-weth {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2022-01-10T10:24:46.389Z] HTTP Error: 403, The caller does not have permission
+[debug] [2022-01-10T10:24:46.730Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at module.exports (/home/ayin_qoph/.nvm/versions/node/v12.18.3/lib/node_modules/firebase-tools/lib/responseToError.js:38:12)
+    at Client.doRequest (/home/ayin_qoph/.nvm/versions/node/v12.18.3/lib/node_modules/firebase-tools/lib/apiv2.js:238:23)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async Client.request (/home/ayin_qoph/.nvm/versions/node/v12.18.3/lib/node_modules/firebase-tools/lib/apiv2.js:96:20)
+    at async Object.getFirebaseProject (/home/ayin_qoph/.nvm/versions/node/v12.18.3/lib/node_modules/firebase-tools/lib/management/projects.js:290:21)
+    at async Object.getDefaultHostingSite (/home/ayin_qoph/.nvm/versions/node/v12.18.3/lib/node_modules/firebase-tools/lib/getDefaultHostingSite.js:8:21)
+    at async requireHostingSite (/home/ayin_qoph/.nvm/versions/node/v12.18.3/lib/node_modules/firebase-tools/lib/requireHostingSite.js:9:18)
+    at async Object.fn (/home/ayin_qoph/.nvm/versions/node/v12.18.3/lib/node_modules/firebase-tools/lib/commands/deploy.js:65:9)
+    at async /home/ayin_qoph/.nvm/versions/node/v12.18.3/lib/node_modules/firebase-tools/lib/command.js:182:17
+[error] 
+[error] Error: Failed to get Firebase project eth-weth. Please make sure the project exists and your account has permission to access it.
+[debug] [2022-01-10T10:25:15.397Z] ----------------------------------------------------------------------
+[debug] [2022-01-10T10:25:15.399Z] Command:       /home/ayin_qoph/.nvm/versions/node/v12.18.3/bin/node /home/ayin_qoph/.nvm/versions/node/v12.18.3/bin/firebase init
+[debug] [2022-01-10T10:25:15.399Z] CLI Version:   9.16.5
+[debug] [2022-01-10T10:25:15.399Z] Platform:      linux
+[debug] [2022-01-10T10:25:15.399Z] Node Version:  v12.18.3
+[debug] [2022-01-10T10:25:15.400Z] Time:          Mon Jan 10 2022 15:25:15 GMT+0500 (Pakistan Standard Time)
+[debug] [2022-01-10T10:25:15.400Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-01-10T10:25:15.466Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-01-10T10:25:15.467Z] > authorizing via signed-in user (a.ebrahym360@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/ayin_qoph/abdullah.ai/eth-weth
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using eth-weth. 
+[debug] [2022-01-10T10:25:25.435Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/eth-weth [none]
+[debug] [2022-01-10T10:25:25.983Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/eth-weth 403
+[debug] [2022-01-10T10:25:25.983Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/eth-weth {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2022-01-10T10:25:25.984Z] HTTP Error: 403, The caller does not have permission
+[debug] [2022-01-10T10:25:26.286Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at module.exports (/home/ayin_qoph/.nvm/versions/node/v12.18.3/lib/node_modules/firebase-tools/lib/responseToError.js:38:12)
+    at Client.doRequest (/home/ayin_qoph/.nvm/versions/node/v12.18.3/lib/node_modules/firebase-tools/lib/apiv2.js:238:23)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async Client.request (/home/ayin_qoph/.nvm/versions/node/v12.18.3/lib/node_modules/firebase-tools/lib/apiv2.js:96:20)
+    at async Object.getFirebaseProject (/home/ayin_qoph/.nvm/versions/node/v12.18.3/lib/node_modules/firebase-tools/lib/management/projects.js:290:21)
+    at async Object.doSetup [as project] (/home/ayin_qoph/.nvm/versions/node/v12.18.3/lib/node_modules/firebase-tools/lib/init/features/project.js:77:27)
+    at async init (/home/ayin_qoph/.nvm/versions/node/v12.18.3/lib/node_modules/firebase-tools/lib/init/index.js:19:9)
+[error] 
+[error] Error: Failed to get Firebase project eth-weth. Please make sure the project exists and your account has permission to access it.

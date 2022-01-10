@@ -45,3 +45,11 @@ export const withdraw = async (walletAddress, wethWei) => {
     console.log("e=======================", e);
   }
 };
+export const getSymbol = async () => {
+  try {
+    let symbol = await wethContract().methods.symbol().call();
+    console.log("Symbol====", symbol);
+  } catch (e) {
+    console.log(e);
+  }
+};

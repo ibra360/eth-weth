@@ -3,7 +3,11 @@ import React, { useEffect, useState } from "react";
 import { useWeb3React } from "@web3-react/core";
 import Web3 from "web3";
 import ConnectWallet from "./ConnectWallet";
-import { deposit, withdraw } from "../Contract/Functions/wethFunction";
+import {
+  deposit,
+  withdraw,
+  getSymbol,
+} from "../Contract/Functions/wethFunction";
 
 import "../Style/form.css";
 
@@ -21,7 +25,8 @@ const Example = (props) => {
 
   const ConvertEth = async (e) => {
     e.preventDefault();
-    deposit(account, web3.utils.toWei(eth));
+    getSymbol();
+    // deposit(account, web3.utils.toWei(eth));
   };
   const ConvertWeth = async (e) => {
     e.preventDefault();
